@@ -35,3 +35,21 @@ export const signOutFailure = (error) => ({
   type: UserActionTypes.SIGN_OUT_FAILURE,
   error: error,
 });
+
+export const signUpStart = (email, password, displayName) => ({
+  type: UserActionTypes.SIGN_UP_START,
+  payload: {
+    email,
+    password,
+    displayName,
+  },
+});
+
+export const signUpSuccess = () => ({
+  type: UserActionTypes.SIGN_UP_SUCCESS,
+});
+
+export const signUpFailure = (error) => ({
+  type: UserActionTypes.SIGN_UP_FAILURE,
+  error: error,
+});
